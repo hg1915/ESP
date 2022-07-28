@@ -9,9 +9,23 @@ import SwiftUI
 
 @main
 struct ESPApp: App {
+    
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView(
+                viewModel: ViewModel.init(
+                    apiManager: ApiManager(
+                        urlBuilder: URLBuilder(),
+                        xmlParser: XMLParser()
+                    )
+                )
+            )
         }
     }
+    
+    
+    
+    
 }

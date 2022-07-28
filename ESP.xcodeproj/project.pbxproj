@@ -7,18 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8F4044289221EB007D2C4C /* RecordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F4043289221EB007D2C4C /* RecordEntry.swift */; };
+		3E8F404628922209007D2C4C /* WidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F404528922209007D2C4C /* WidgetEntryView.swift */; };
+		3E8F404828922233007D2C4C /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F404728922233007D2C4C /* SmallWidgetView.swift */; };
+		3E8F404A289222CF007D2C4C /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F4049289222CF007D2C4C /* Provider.swift */; };
+		3E8F404C289223C0007D2C4C /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85728921F3D0028C688 /* XMLParser.swift */; };
+		3E8F404F289224AB007D2C4C /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 3E8F404E289224AB007D2C4C /* SWXMLHash */; };
 		3ED8D81828921C940028C688 /* ESPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D81728921C940028C688 /* ESPApp.swift */; };
 		3ED8D81A28921C940028C688 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D81928921C940028C688 /* ContentView.swift */; };
 		3ED8D81C28921C960028C688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED8D81B28921C960028C688 /* Assets.xcassets */; };
 		3ED8D81F28921C960028C688 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED8D81E28921C960028C688 /* Preview Assets.xcassets */; };
+		3ED8D82F28921D3E0028C688 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED8D82E28921D3E0028C688 /* WidgetKit.framework */; };
+		3ED8D83128921D3E0028C688 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED8D83028921D3E0028C688 /* SwiftUI.framework */; };
+		3ED8D83428921D3E0028C688 /* ESPWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D83328921D3E0028C688 /* ESPWidget.swift */; };
+		3ED8D83628921D400028C688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED8D83528921D400028C688 /* Assets.xcassets */; };
+		3ED8D83A28921D400028C688 /* ESPWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3ED8D82C28921D3E0028C688 /* ESPWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3ED8D84228921D900028C688 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D84128921D900028C688 /* String+.swift */; };
+		3ED8D84328921DB40028C688 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D84128921D900028C688 /* String+.swift */; };
+		3ED8D84828921E300028C688 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D84728921E300028C688 /* WidgetView.swift */; };
+		3ED8D84928921E300028C688 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D84728921E300028C688 /* WidgetView.swift */; };
+		3ED8D84B28921E4E0028C688 /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D84A28921E4E0028C688 /* WidgetViewModel.swift */; };
+		3ED8D84C28921E4E0028C688 /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D84A28921E4E0028C688 /* WidgetViewModel.swift */; };
+		3ED8D84E28921E5F0028C688 /* WidgetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D84D28921E5F0028C688 /* WidgetSize.swift */; };
+		3ED8D84F28921E5F0028C688 /* WidgetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D84D28921E5F0028C688 /* WidgetSize.swift */; };
+		3ED8D85128921EAB0028C688 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85028921EAB0028C688 /* HomeView.swift */; };
+		3ED8D85428921EBF0028C688 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85328921EBF0028C688 /* ViewModel.swift */; };
+		3ED8D85828921F3D0028C688 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85728921F3D0028C688 /* XMLParser.swift */; };
+		3ED8D85B28921F500028C688 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85A28921F500028C688 /* ApiManager.swift */; };
+		3ED8D85C28921F500028C688 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85A28921F500028C688 /* ApiManager.swift */; };
+		3ED8D85E28921F5A0028C688 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85D28921F5A0028C688 /* URLBuilder.swift */; };
+		3ED8D85F28921F5A0028C688 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85D28921F5A0028C688 /* URLBuilder.swift */; };
+		3ED8D861289220470028C688 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D860289220470028C688 /* Record.swift */; };
+		3ED8D862289220470028C688 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D860289220470028C688 /* Record.swift */; };
+		3ED8D8642892207A0028C688 /* RecordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D8632892207A0028C688 /* RecordError.swift */; };
+		3ED8D8652892207A0028C688 /* RecordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D8632892207A0028C688 /* RecordError.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3ED8D83828921D400028C688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ED8D80C28921C940028C688 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ED8D82B28921D3E0028C688;
+			remoteInfo = ESPWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3ED8D83E28921D400028C688 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3ED8D83A28921D400028C688 /* ESPWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3E8F4043289221EB007D2C4C /* RecordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordEntry.swift; sourceTree = "<group>"; };
+		3E8F404528922209007D2C4C /* WidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntryView.swift; sourceTree = "<group>"; };
+		3E8F404728922233007D2C4C /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
+		3E8F4049289222CF007D2C4C /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		3ED8D81428921C940028C688 /* ESP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED8D81728921C940028C688 /* ESPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESPApp.swift; sourceTree = "<group>"; };
 		3ED8D81928921C940028C688 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3ED8D81B28921C960028C688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED8D81E28921C960028C688 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3ED8D82C28921D3E0028C688 /* ESPWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ESPWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED8D82E28921D3E0028C688 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3ED8D83028921D3E0028C688 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3ED8D83328921D3E0028C688 /* ESPWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESPWidget.swift; sourceTree = "<group>"; };
+		3ED8D83528921D400028C688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ED8D83728921D400028C688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED8D83F28921D4C0028C688 /* ESP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ESP.entitlements; sourceTree = "<group>"; };
+		3ED8D84028921D6E0028C688 /* ESPWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ESPWidgetExtension.entitlements; sourceTree = "<group>"; };
+		3ED8D84128921D900028C688 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		3ED8D84728921E300028C688 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		3ED8D84A28921E4E0028C688 /* WidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewModel.swift; sourceTree = "<group>"; };
+		3ED8D84D28921E5F0028C688 /* WidgetSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSize.swift; sourceTree = "<group>"; };
+		3ED8D85028921EAB0028C688 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3ED8D85328921EBF0028C688 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3ED8D85728921F3D0028C688 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		3ED8D85A28921F500028C688 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		3ED8D85D28921F5A0028C688 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		3ED8D860289220470028C688 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		3ED8D8632892207A0028C688 /* RecordError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +103,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8F404F289224AB007D2C4C /* SWXMLHash in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED8D82928921D3E0028C688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED8D83128921D3E0028C688 /* SwiftUI.framework in Frameworks */,
+				3ED8D82F28921D3E0028C688 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +122,10 @@
 		3ED8D80B28921C940028C688 = {
 			isa = PBXGroup;
 			children = (
+				3ED8D84028921D6E0028C688 /* ESPWidgetExtension.entitlements */,
 				3ED8D81628921C940028C688 /* ESP */,
+				3ED8D83228921D3E0028C688 /* ESPWidget */,
+				3ED8D82D28921D3E0028C688 /* Frameworks */,
 				3ED8D81528921C940028C688 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				3ED8D81428921C940028C688 /* ESP.app */,
+				3ED8D82C28921D3E0028C688 /* ESPWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +142,18 @@
 		3ED8D81628921C940028C688 /* ESP */ = {
 			isa = PBXGroup;
 			children = (
+				3ED8D83F28921D4C0028C688 /* ESP.entitlements */,
+				3ED8D84128921D900028C688 /* String+.swift */,
+				3ED8D84728921E300028C688 /* WidgetView.swift */,
+				3ED8D84A28921E4E0028C688 /* WidgetViewModel.swift */,
+				3ED8D84D28921E5F0028C688 /* WidgetSize.swift */,
+				3ED8D85028921EAB0028C688 /* HomeView.swift */,
+				3ED8D85328921EBF0028C688 /* ViewModel.swift */,
+				3ED8D85728921F3D0028C688 /* XMLParser.swift */,
+				3ED8D85A28921F500028C688 /* ApiManager.swift */,
+				3ED8D85D28921F5A0028C688 /* URLBuilder.swift */,
+				3ED8D860289220470028C688 /* Record.swift */,
+				3ED8D8632892207A0028C688 /* RecordError.swift */,
 				3ED8D81728921C940028C688 /* ESPApp.swift */,
 				3ED8D81928921C940028C688 /* ContentView.swift */,
 				3ED8D81B28921C960028C688 /* Assets.xcassets */,
@@ -67,6 +170,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3ED8D82D28921D3E0028C688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ED8D82E28921D3E0028C688 /* WidgetKit.framework */,
+				3ED8D83028921D3E0028C688 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3ED8D83228921D3E0028C688 /* ESPWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3E8F4043289221EB007D2C4C /* RecordEntry.swift */,
+				3E8F404528922209007D2C4C /* WidgetEntryView.swift */,
+				3E8F404728922233007D2C4C /* SmallWidgetView.swift */,
+				3ED8D83328921D3E0028C688 /* ESPWidget.swift */,
+				3E8F4049289222CF007D2C4C /* Provider.swift */,
+				3ED8D83528921D400028C688 /* Assets.xcassets */,
+				3ED8D83728921D400028C688 /* Info.plist */,
+			);
+			path = ESPWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +203,37 @@
 				3ED8D81028921C940028C688 /* Sources */,
 				3ED8D81128921C940028C688 /* Frameworks */,
 				3ED8D81228921C940028C688 /* Resources */,
+				3ED8D83E28921D400028C688 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ED8D83928921D400028C688 /* PBXTargetDependency */,
+			);
+			name = ESP;
+			packageProductDependencies = (
+				3E8F404E289224AB007D2C4C /* SWXMLHash */,
+			);
+			productName = ESP;
+			productReference = 3ED8D81428921C940028C688 /* ESP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3ED8D82B28921D3E0028C688 /* ESPWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED8D83B28921D400028C688 /* Build configuration list for PBXNativeTarget "ESPWidgetExtension" */;
+			buildPhases = (
+				3ED8D82828921D3E0028C688 /* Sources */,
+				3ED8D82928921D3E0028C688 /* Frameworks */,
+				3ED8D82A28921D3E0028C688 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ESP;
-			productName = ESP;
-			productReference = 3ED8D81428921C940028C688 /* ESP.app */;
-			productType = "com.apple.product-type.application";
+			name = ESPWidgetExtension;
+			productName = ESPWidgetExtension;
+			productReference = 3ED8D82C28921D3E0028C688 /* ESPWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +248,9 @@
 					3ED8D81328921C940028C688 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					3ED8D82B28921D3E0028C688 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 3ED8D80F28921C940028C688 /* Build configuration list for PBXProject "ESP" */;
@@ -111,11 +262,15 @@
 				Base,
 			);
 			mainGroup = 3ED8D80B28921C940028C688;
+			packageReferences = (
+				3E8F404D289224AB007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
 			productRefGroup = 3ED8D81528921C940028C688 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3ED8D81328921C940028C688 /* ESP */,
+				3ED8D82B28921D3E0028C688 /* ESPWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +285,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3ED8D82A28921D3E0028C688 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED8D83628921D400028C688 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +300,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ED8D84B28921E4E0028C688 /* WidgetViewModel.swift in Sources */,
+				3ED8D85128921EAB0028C688 /* HomeView.swift in Sources */,
+				3ED8D861289220470028C688 /* Record.swift in Sources */,
+				3ED8D85B28921F500028C688 /* ApiManager.swift in Sources */,
+				3ED8D85E28921F5A0028C688 /* URLBuilder.swift in Sources */,
+				3ED8D85828921F3D0028C688 /* XMLParser.swift in Sources */,
 				3ED8D81A28921C940028C688 /* ContentView.swift in Sources */,
+				3ED8D84228921D900028C688 /* String+.swift in Sources */,
+				3ED8D8642892207A0028C688 /* RecordError.swift in Sources */,
+				3ED8D84828921E300028C688 /* WidgetView.swift in Sources */,
+				3ED8D84E28921E5F0028C688 /* WidgetSize.swift in Sources */,
+				3ED8D85428921EBF0028C688 /* ViewModel.swift in Sources */,
 				3ED8D81828921C940028C688 /* ESPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3ED8D82828921D3E0028C688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8F404C289223C0007D2C4C /* XMLParser.swift in Sources */,
+				3ED8D84C28921E4E0028C688 /* WidgetViewModel.swift in Sources */,
+				3E8F404828922233007D2C4C /* SmallWidgetView.swift in Sources */,
+				3E8F404A289222CF007D2C4C /* Provider.swift in Sources */,
+				3E8F404628922209007D2C4C /* WidgetEntryView.swift in Sources */,
+				3ED8D8652892207A0028C688 /* RecordError.swift in Sources */,
+				3ED8D84F28921E5F0028C688 /* WidgetSize.swift in Sources */,
+				3ED8D862289220470028C688 /* Record.swift in Sources */,
+				3ED8D85C28921F500028C688 /* ApiManager.swift in Sources */,
+				3ED8D84928921E300028C688 /* WidgetView.swift in Sources */,
+				3E8F4044289221EB007D2C4C /* RecordEntry.swift in Sources */,
+				3ED8D85F28921F5A0028C688 /* URLBuilder.swift in Sources */,
+				3ED8D84328921DB40028C688 /* String+.swift in Sources */,
+				3ED8D83428921D3E0028C688 /* ESPWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3ED8D83928921D400028C688 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ED8D82B28921D3E0028C688 /* ESPWidgetExtension */;
+			targetProxy = 3ED8D83828921D400028C688 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3ED8D82028921C960028C688 /* Debug */ = {
@@ -195,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -262,8 +465,10 @@
 		3ED8D82328921C960028C688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ESP/ESP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ESP/Preview Content\"";
@@ -291,8 +496,10 @@
 		3ED8D82428921C960028C688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ESP/ESP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ESP/Preview Content\"";
@@ -311,6 +518,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HG.ESP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3ED8D83C28921D400028C688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ESPWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MKC9P7RBA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ESPWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ESPWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HG.ESP.ESPWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ED8D83D28921D400028C688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ESPWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MKC9P7RBA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ESPWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ESPWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HG.ESP.ESPWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +601,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3ED8D83B28921D400028C688 /* Build configuration list for PBXNativeTarget "ESPWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED8D83C28921D400028C688 /* Debug */,
+				3ED8D83D28921D400028C688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E8F404D289224AB007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash";
+			requirement = {
+				kind = exactVersion;
+				version = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E8F404E289224AB007D2C4C /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E8F404D289224AB007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3ED8D80C28921C940028C688 /* Project object */;
 }
