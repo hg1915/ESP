@@ -12,7 +12,8 @@
 		3E8F404828922233007D2C4C /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F404728922233007D2C4C /* SmallWidgetView.swift */; };
 		3E8F404A289222CF007D2C4C /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F4049289222CF007D2C4C /* Provider.swift */; };
 		3E8F404C289223C0007D2C4C /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85728921F3D0028C688 /* XMLParser.swift */; };
-		3E8F4052289231AA007D2C4C /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 3E8F4051289231AA007D2C4C /* SWXMLHash */; };
+		3E9A7E1028923C780092DBE0 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9A7E0F28923C780092DBE0 /* SWXMLHash */; };
+		3E9A7E1228923CF10092DBE0 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9A7E1128923CF10092DBE0 /* SWXMLHash */; };
 		3ED8D81828921C940028C688 /* ESPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D81728921C940028C688 /* ESPApp.swift */; };
 		3ED8D81A28921C940028C688 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D81928921C940028C688 /* ContentView.swift */; };
 		3ED8D81C28921C960028C688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED8D81B28921C960028C688 /* Assets.xcassets */; };
@@ -103,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8F4052289231AA007D2C4C /* SWXMLHash in Frameworks */,
+				3E9A7E1028923C780092DBE0 /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9A7E1228923CF10092DBE0 /* SWXMLHash in Frameworks */,
 				3ED8D83128921D3E0028C688 /* SwiftUI.framework in Frameworks */,
 				3ED8D82F28921D3E0028C688 /* WidgetKit.framework in Frameworks */,
 			);
@@ -212,7 +214,7 @@
 			);
 			name = ESP;
 			packageProductDependencies = (
-				3E8F4051289231AA007D2C4C /* SWXMLHash */,
+				3E9A7E0F28923C780092DBE0 /* SWXMLHash */,
 			);
 			productName = ESP;
 			productReference = 3ED8D81428921C940028C688 /* ESP.app */;
@@ -231,6 +233,9 @@
 			dependencies = (
 			);
 			name = ESPWidgetExtension;
+			packageProductDependencies = (
+				3E9A7E1128923CF10092DBE0 /* SWXMLHash */,
+			);
 			productName = ESPWidgetExtension;
 			productReference = 3ED8D82C28921D3E0028C688 /* ESPWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -263,7 +268,7 @@
 			);
 			mainGroup = 3ED8D80B28921C940028C688;
 			packageReferences = (
-				3E8F4050289231AA007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+				3E9A7E0E28923C780092DBE0 /* XCRemoteSwiftPackageReference "SWXMLHash" */,
 			);
 			productRefGroup = 3ED8D81528921C940028C688 /* Products */;
 			projectDirPath = "";
@@ -613,20 +618,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3E8F4050289231AA007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+		3E9A7E0E28923C780092DBE0 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/drmohundro/SWXMLHash";
 			requirement = {
-				kind = exactVersion;
-				version = 6.0.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3E8F4051289231AA007D2C4C /* SWXMLHash */ = {
+		3E9A7E0F28923C780092DBE0 /* SWXMLHash */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3E8F4050289231AA007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			package = 3E9A7E0E28923C780092DBE0 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+		3E9A7E1128923CF10092DBE0 /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E9A7E0E28923C780092DBE0 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
 			productName = SWXMLHash;
 		};
 /* End XCSwiftPackageProductDependency section */
