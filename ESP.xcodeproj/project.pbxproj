@@ -12,7 +12,7 @@
 		3E8F404828922233007D2C4C /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F404728922233007D2C4C /* SmallWidgetView.swift */; };
 		3E8F404A289222CF007D2C4C /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8F4049289222CF007D2C4C /* Provider.swift */; };
 		3E8F404C289223C0007D2C4C /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D85728921F3D0028C688 /* XMLParser.swift */; };
-		3E8F404F289224AB007D2C4C /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 3E8F404E289224AB007D2C4C /* SWXMLHash */; };
+		3E8F4052289231AA007D2C4C /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = 3E8F4051289231AA007D2C4C /* SWXMLHash */; };
 		3ED8D81828921C940028C688 /* ESPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D81728921C940028C688 /* ESPApp.swift */; };
 		3ED8D81A28921C940028C688 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8D81928921C940028C688 /* ContentView.swift */; };
 		3ED8D81C28921C960028C688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED8D81B28921C960028C688 /* Assets.xcassets */; };
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8F404F289224AB007D2C4C /* SWXMLHash in Frameworks */,
+				3E8F4052289231AA007D2C4C /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +212,7 @@
 			);
 			name = ESP;
 			packageProductDependencies = (
-				3E8F404E289224AB007D2C4C /* SWXMLHash */,
+				3E8F4051289231AA007D2C4C /* SWXMLHash */,
 			);
 			productName = ESP;
 			productReference = 3ED8D81428921C940028C688 /* ESP.app */;
@@ -263,7 +263,7 @@
 			);
 			mainGroup = 3ED8D80B28921C940028C688;
 			packageReferences = (
-				3E8F404D289224AB007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+				3E8F4050289231AA007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */,
 			);
 			productRefGroup = 3ED8D81528921C940028C688 /* Products */;
 			projectDirPath = "";
@@ -489,7 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -520,7 +520,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -548,7 +548,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -576,7 +576,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -613,7 +613,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3E8F404D289224AB007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+		3E8F4050289231AA007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/drmohundro/SWXMLHash";
 			requirement = {
@@ -624,9 +624,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3E8F404E289224AB007D2C4C /* SWXMLHash */ = {
+		3E8F4051289231AA007D2C4C /* SWXMLHash */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3E8F404D289224AB007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			package = 3E8F4050289231AA007D2C4C /* XCRemoteSwiftPackageReference "SWXMLHash" */;
 			productName = SWXMLHash;
 		};
 /* End XCSwiftPackageProductDependency section */
